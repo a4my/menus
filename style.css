@@ -647,3 +647,56 @@ body {
     transform: rotate(360deg);
 }
 
+
+
+
+/* MENU-10 */
+
+.navbar-10 {
+    padding: 0;
+    margin-top: 20px;
+}
+
+.navbar-10 li {
+    list-style: none;
+}
+
+.navbar-10 li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 50px;
+    display: block;
+    padding: 5px 10px;
+    position: relative;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+}
+
+.navbar-10 li a:before,
+.navbar-10 li a:after
+ {
+    content: attr(data-text);
+    position: absolute;
+    top: 5px;
+    left: 9px;
+    transition: .5s;
+}
+
+.navbar-10 li a:hover:before {
+    color: thistle;
+    z-index: 1;
+    -webkit-text-stroke: 1px black;
+    transform: translate(5px, -5px);
+}
+
+.navbar-10 li a:hover:after {
+    color: cornflowerblue;
+    z-index: 2;
+    -webkit-text-stroke: 1px black;
+    transform: translate(10px, -10px);
+}
+
+.navbar-10 li a:hover {
+    color: #fff;
+    transition: .5s;
+}
